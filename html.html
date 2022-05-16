@@ -24,15 +24,15 @@
         <legend>Contact Information</legend>
         <div class="columns">
             <label for="name" >Full Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required">
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user_email" placeholder="Required">
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone">
+            <input type="tel" pattern="^[0-9]{3,45}$" id="phone" name="user_phone" placeholder="Required" required>
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <input type="text" id="address" name="user_address" placeholder="Required" required>
             <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <input type="text" id="city" name="user_city" placeholder="Required" required>
             <label for="state">State</label>
             <select required id="state" name="user_state">
                 <option disabled hidden selected value="">Choose State</option>
@@ -99,7 +99,7 @@
                 </optgroup>
             </select>
         <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="user_zip">
+        <input type="text" id="zip" name="user_zip" placeholder=" ">
     </div>
 </fieldset>
 <hr>
@@ -125,7 +125,7 @@
         Plain text</label>
     
         <label for="topics" class="title">Other topics you'd like to hear about</label>
-        <textarea id="topics" name="user_topics" rows="5" cols="40"></textarea>
+        <textarea id="topics" name="user_topics" rows="5" cols="40" placeholder="Let us know about any other topic you'd like to hear about here"></textarea>
     <button type="submit">Sign Up</button>
 </fieldset>
 </form> 
@@ -134,4 +134,3 @@
   </footer>
       
 </body>
-  
